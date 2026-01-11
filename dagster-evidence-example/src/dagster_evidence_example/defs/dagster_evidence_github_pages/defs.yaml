@@ -1,0 +1,8 @@
+type: dagster_evidence.EvidenceProjectComponentV2
+attributes:
+  evidence_project:
+    project_type: local
+    project_path: ../../../evidence_project
+    project_deployment:
+      type: github_pages
+      githab_project_url: https://github.com/your-org/your-repo

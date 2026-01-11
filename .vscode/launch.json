@@ -1,0 +1,19 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "dg dev",
+            "type": "debugpy",
+            "request": "launch",
+            "python": "${workspaceFolder}/dagster-evidence-example/.venv/bin/python",
+            "program": "${workspaceFolder}/dagster-evidence-example/.venv/bin/dg",
+            "args": ["dev", "--host", "0.0.0.0"],
+            "cwd": "${workspaceFolder}/dagster-evidence-example",
+            "justMyCode": false,
+            "subProcess": true,
+        }
+    ]
+}
