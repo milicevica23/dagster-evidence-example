@@ -5,4 +5,5 @@ attributes:
     project_path: ../../../evidence_project
     project_deployment:
       type: github_pages
-      githab_project_url: https://github.com/your-org/your-repo
+      github_repo: https://github.com/milicevica23/dagster-evidence-example
+
