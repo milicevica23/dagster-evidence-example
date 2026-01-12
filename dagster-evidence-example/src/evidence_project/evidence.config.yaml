@@ -1,3 +1,6 @@
+deployment:
+  basePath: /dagster-evidence-example
+
 appearance:
   default: system
   switcher: true
