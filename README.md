@@ -2,7 +2,7 @@
 
 This project demonstrates the integration between [Dagster](https://dagster.io/) and [Evidence.dev](https://evidence.dev/), enabling data orchestration with automated BI dashboard deployment.
 
-![Dagster Asset Graph](../docs/image.png)
+![Dagster Asset Graph](./docs/image.png)
 
 ## Overview
 
