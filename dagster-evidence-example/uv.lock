@@ -390,29 +390,12 @@ wheels = [
 
 [[package]]
 name = "dagster-evidence"
-source = { editable = "../../../open-source/community-integrations/libraries/dagster-evidence" }
+version = "0.1.7"
+source = { git = "https://github.com/milicevica23/community-integrations?subdirectory=libraries%2Fdagster-evidence&branch=feat%2Fadd-new-evidence-component-v2#d2ae2430d94b0ac598cd7a8c342fb6bc6c910ccb" }
 dependencies = [
     { name = "dagster" },
     { name = "gitpython" },
     { name = "pyyaml" },
-]
-
-[package.metadata]
-requires-dist = [
-    { name = "dagster", specifier = ">=1.10.9" },
-    { name = "gitpython", specifier = ">=3.1.0" },
-    { name = "pytest", marker = "extra == 'test'" },
-    { name = "pytest-mock", marker = "extra == 'test'" },
-    { name = "pyyaml", specifier = ">=6.0" },
-]
-provides-extras = ["test"]
-
-[package.metadata.requires-dev]
-dev = [
-    { name = "pyright", specifier = ">=1.1.386" },
-    { name = "pytest" },
-    { name = "pytest-mock" },
-    { name = "ruff" },
 ]
 
 [[package]]
@@ -433,7 +416,7 @@ dev = [
 [package.metadata]
 requires-dist = [
     { name = "dagster", specifier = "==1.12.10" },
-    { name = "dagster-evidence", editable = "../../../open-source/community-integrations/libraries/dagster-evidence" },
+    { name = "dagster-evidence", git = "https://github.com/milicevica23/community-integrations?subdirectory=libraries%2Fdagster-evidence&branch=feat%2Fadd-new-evidence-component-v2" },
 ]
 
 [package.metadata.requires-dev]
