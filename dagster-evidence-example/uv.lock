@@ -390,12 +390,31 @@ wheels = [
 
 [[package]]
 name = "dagster-evidence"
-version = "0.1.7"
-source = { git = "https://github.com/milicevica23/community-integrations?subdirectory=libraries%2Fdagster-evidence&branch=feat%2Fadd-new-evidence-component-v2#d2ae2430d94b0ac598cd7a8c342fb6bc6c910ccb" }
+source = { editable = "../../../open-source/community-integrations/libraries/dagster-evidence" }
 dependencies = [
     { name = "dagster" },
     { name = "gitpython" },
     { name = "pyyaml" },
+    { name = "sqlglot" },
+]
+
+[package.metadata]
+requires-dist = [
+    { name = "dagster", specifier = ">=1.12.10" },
+    { name = "gitpython", specifier = ">=3.1.0" },
+    { name = "pytest", marker = "extra == 'test'" },
+    { name = "pytest-mock", marker = "extra == 'test'" },
+    { name = "pyyaml", specifier = ">=6.0" },
+    { name = "sqlglot", specifier = ">=26.0.0" },
+]
+provides-extras = ["test"]
+
+[package.metadata.requires-dev]
+dev = [
+    { name = "pyright", specifier = ">=1.1.386" },
+    { name = "pytest" },
+    { name = "pytest-mock" },
+    { name = "ruff" },
 ]
 
 [[package]]
@@ -416,7 +435,7 @@ dev = [
 [package.metadata]
 requires-dist = [
     { name = "dagster", specifier = "==1.12.10" },
-    { name = "dagster-evidence", git = "https://github.com/milicevica23/community-integrations?subdirectory=libraries%2Fdagster-evidence&branch=feat%2Fadd-new-evidence-component-v2" },
+    { name = "dagster-evidence", editable = "../../../open-source/community-integrations/libraries/dagster-evidence" },
 ]
 
 [package.metadata.requires-dev]
@@ -1480,6 +1499,15 @@ wheels = [
     { url = "https://files.pythonhosted.org/packages/5c/39/69c0b4051079addd57c84a5bfb34920d87456dd4c90cf7ee0df6efafc8ff/sqlalchemy-2.0.45-cp312-cp312-win32.whl", hash = "sha256:0c9f6ada57b58420a2c0277ff853abe40b9e9449f8d7d231763c6bc30f5c4953", size = 2112182, upload-time = "2025-12-09T21:39:30.824Z" },
     { url = "https://files.pythonhosted.org/packages/f7/4e/510db49dd89fc3a6e994bee51848c94c48c4a00dc905e8d0133c251f41a7/sqlalchemy-2.0.45-cp312-cp312-win_amd64.whl", hash = "sha256:8defe5737c6d2179c7997242d6473587c3beb52e557f5ef0187277009f73e5e1", size = 2139200, upload-time = "2025-12-09T21:39:32.321Z" },
     { url = "https://files.pythonhosted.org/packages/bf/e1/3ccb13c643399d22289c6a9786c1a91e3dcbb68bce4beb44926ac2c557bf/sqlalchemy-2.0.45-py3-none-any.whl", hash = "sha256:5225a288e4c8cc2308dbdd874edad6e7d0fd38eac1e9e5f23503425c8eee20d0", size = 1936672, upload-time = "2025-12-09T21:54:52.608Z" },
+]
+
+[[package]]
+name = "sqlglot"
+version = "28.6.0"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/46/b6/f188b9616bef49943353f3622d726af30fdb08acbd081deef28ba43ceb48/sqlglot-28.6.0.tar.gz", hash = "sha256:8c0a432a6745c6c7965bbe99a17667c5a3ca1d524a54b31997cf5422b1727f6a", size = 5676522, upload-time = "2026-01-13T17:39:24.389Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/8f/a6/21b1e19994296ba4a34bc7abaf4fcb40d7e7787477bdfde58cd843594459/sqlglot-28.6.0-py3-none-any.whl", hash = "sha256:8af76e825dc8456a49f8ce049d69bbfcd116655dda3e53051754789e2edf8eba", size = 575186, upload-time = "2026-01-13T17:39:22.327Z" },
 ]
 
 [[package]]

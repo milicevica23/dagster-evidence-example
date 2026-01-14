@@ -8,8 +8,8 @@ dependencies = [
 ]
 
 [tool.uv.sources]
-#dagster-evidence = { path = "/Users/milicevica23/git/open-source/community-integrations/libraries/dagster-evidence", editable = true }
-dagster-evidence = { git = "https://github.com/milicevica23/community-integrations", branch = "feat/add-new-evidence-component-v2", subdirectory = "libraries/dagster-evidence" }
+dagster-evidence = { path = "/Users/milicevica23/git/open-source/community-integrations/libraries/dagster-evidence", editable = true }
+#dagster-evidence = { git = "https://github.com/milicevica23/community-integrations", branch = "feat/add-new-evidence-component-v2", subdirectory = "libraries/dagster-evidence" }
 
 [dependency-groups]
 dev = [
