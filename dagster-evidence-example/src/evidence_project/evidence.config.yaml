@@ -5,6 +5,10 @@ appearance:
   default: system
   switcher: true
 
+meta:
+  dagster:
+    group_name: evidence_project
+
 theme:
   colorPalettes:
     default:
@@ -82,3 +86,5 @@ plugins:
     "@evidence-dev/sqlite": { }
     "@evidence-dev/trino": { }
     "@evidence-dev/motherduck": { }
+    "@evidence-dev/connector-gsheets": { }
+

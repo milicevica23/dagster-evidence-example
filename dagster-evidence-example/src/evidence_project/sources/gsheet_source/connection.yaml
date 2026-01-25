@@ -1,0 +1,12 @@
+# This file was automatically generated
+name: gsheet_source
+type: gsheets
+options: 
+  service_account_path: "<path-to-your-service-account-key>"
+sheets:
+  sales_data:
+    id: 1ErlAZXrngH-UdxSw0B5KhDyxV9ywm00HLx0D6JPAQgQ
+meta:
+  dagster:
+    group_name: gsheet_source
+    create_source_sensor: true

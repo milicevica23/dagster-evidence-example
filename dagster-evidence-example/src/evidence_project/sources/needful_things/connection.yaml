@@ -3,3 +3,6 @@ name: needful_things
 type: duckdb
 options:
   filename: needful_things.duckdb
+meta:
+  dagster:
+    create_source_sensor: true
