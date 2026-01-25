@@ -1,0 +1,8 @@
+dbt_evidence_example:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: "md:dbt_evidence_example"
+      extensions:
+        - motherduck

@@ -1,0 +1,4 @@
+name: dbt_analytics_source
+type: motherduck
+options:
+  database: dbt_evidence_example

@@ -1,0 +1,7 @@
+name: dbt_users_source_hidden
+type: motherduck
+options:
+  database: dbt_evidence_example
+meta:
+  dagster:
+    hide_source_asset: true

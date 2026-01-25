@@ -5,6 +5,8 @@ version = "0.1.0"
 dependencies = [
     "dagster==1.12.10",
     "dagster-evidence[all]",
+    "dagster-dbt",
+    "dbt-duckdb",
 ]
 
 [tool.uv.sources]
@@ -30,7 +32,9 @@ directory_type = "project"
 [tool.dg.project]
 root_module = "dagster_evidence_example"
 registry_modules = [
-    "dagster_evidence_example.components.*","dagster_evidence.components.evidence_project_v2.*"
+    "dagster_evidence_example.components.*",
+    "dagster_evidence.components.evidence_project_v2.*",
+    "dagster_dbt.components.*",
 ]
 
 
